@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Detail</title>
+</head>
+<body>
+    <h1>{{ book.title }}</h1>
+    <p>Author: {{ book.author }}</p>
+    <p>Published Date: {{ book.published_date }}</p>
+    <p>ISBN: {{ book.isbn }}</p>
+    <p>Pages: {{ book.pages }}</p>
+    {% if book.cover_image %}
+        <p><img src="{{ book.cover_image.url }}" alt="Cover Image"></p>
+    {% endif %}
+</body>
+</html>
